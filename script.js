@@ -14,7 +14,7 @@ function generatePassword() {
         return 
     length = parseInt(length)
     if (length < 8 || length > 128 || isNaN (length)){
-        alert("Enter a password between 8 and 128 characters.")
+        alert("Enter a password length between 8 and 128 characters.")
         return generatePassword()
     }
     const allowlowerCasedCharacters = confirm ("Allow lower case characters?")
